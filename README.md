@@ -11,3 +11,6 @@ Simply override `Custom.css` in the `User Stylesheets` directory:
 **PC:** `C:\Users\YourUsername\AppData\Local\Google\Chrome\UserData\Default\User StyleSheets\Custom.css`
 
 **Ubuntu (Chromium):** `~/.config/chromium/Default/User StyleSheets/Custom.css`
+
+## Screenshot
+![Screenshot](ressources/screenshot.png)
