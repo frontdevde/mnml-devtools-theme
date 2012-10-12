@@ -2,73 +2,39 @@
 /*
 /* Mnml DevTools Theme by Michael P. Pfeiffer
 /*
-/* Adapted from a Gist by Ben Truyman:
+/* Based on a Gist by Ben Truyman. Further attr:
 /* https://gist.github.com/3040634
-/* Based on Chris Kempson's Tomorrow Theme:
-/* https://github.com/ChrisKempson/Tomorrow-Theme
 /*
 /**********************************************/
-#-webkit-web-inspector {
-  /* Toolbar
-  /**********************************************/
-
-  /* Console
-  /**********************************************/
-
-  /* Messages
-    /**********************************************/
-
-  /* Prompt
-    /**********************************************/
-
-  /* Elements/Network/Scripts
-  /**********************************************/
-
-  /* Layout
-    /**********************************************/
-
-  /* HTML
-    /**********************************************/
-
-  /* CSS
-    /**********************************************/
-
-  /* JavaScript
-    /**********************************************/
-
-  /**********************************************/
-
-  /* Everything Else
-    /**********************************************/
-
-}
 #-webkit-web-inspector ::selection {
   background: #888;
   opacity: 1;
 }
 #-webkit-web-inspector.compact #toolbar {
-  background-image: -webkit-linear-gradient(#555555, #333333) !important;
-  border-bottom: 1px solid #444 !important;
+  background: -webkit-linear-gradient(#555555, #333333) !important;
   border-top: 5px solid #c96666 !important;
+  border-bottom: 1px solid #444444 !important;
   padding-top: 0 !important;
   height: 50px !important;
 }
 #-webkit-web-inspector.compact #toolbar .toolbar-label {
-  color: #aaa !important;
+  color: #ffffff !important;
 }
 #-webkit-web-inspector.compact #toolbar .toggled-on .toolbar-label {
-  color: #eee !important;
+  color: #ffffff !important;
+}
+#-webkit-web-inspector.compact #toolbar .toolbar-item {
+  padding: 10px 15px !important;
 }
 #-webkit-web-inspector.compact #toolbar .toolbar-item.toggleable.toggled-on {
-  background-image: -webkit-linear-gradient(#333333, #555555) !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  background: -webkit-linear-gradient(#444444, #333333) !important;
+  padding: 10px 13px !important;
 }
 #-webkit-web-inspector.compact .toolbar-item.close-left {
-  margin-top: 13px !important;
+  margin-top: 1px !important;
 }
 #-webkit-web-inspector.compact #toolbar-controls {
-  margin-top: -5px !important;
+  margin-top: -4px !important;
 }
 #-webkit-web-inspector.compact #toolbar-search-item {
   margin-top: 12px !important;

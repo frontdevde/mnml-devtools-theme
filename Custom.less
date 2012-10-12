@@ -2,10 +2,8 @@
 /*
 /* Mnml DevTools Theme by Michael P. Pfeiffer
 /*
-/* Adapted from a Gist by Ben Truyman:
+/* Based on a Gist by Ben Truyman. Further attr:
 /* https://gist.github.com/3040634
-/* Based on Chris Kempson's Tomorrow Theme:
-/* https://github.com/ChrisKempson/Tomorrow-Theme
 /*
 /**********************************************/
 
@@ -13,8 +11,15 @@
 @background:   #1d1f21;
 @current-line: #282a2e;
 @selection:    #373b41;
-@top-bar:      #C96666;
 @foreground:   #c5c8c6;
+
+//toolbar
+@toolbar-label: #fff;
+@toolbar-label-active: #fff;
+@toolbar-bg: -webkit-linear-gradient(#555, #333);
+@toolbar-bg-active: -webkit-linear-gradient(#444, #333);
+@toolbar-border-top: #C96666;
+@toolbar-border-bottom: #444;
 
 // html
 @html-attribute-name:  #BBDE57;
@@ -47,69 +52,66 @@
 
 #-webkit-web-inspector {
   
-  ::selection {
+    ::selection {
     background: #888;
     opacity: 1;
-  }
-  
-  /**********************************************/
-  /* Toolbar
-  /**********************************************/
-  
-  &.compact #toolbar {
-    background-image: -webkit-linear-gradient(#555, #333) !important;
-    border-bottom: 1px solid #444 !important;
-    border-top: 5px solid @top-bar !important;
+    }
+    
+    
+    //Toolbar Styles
+    
+    &.compact #toolbar {
+    background: @toolbar-bg !important;
+    border-top: 5px solid @toolbar-border-top !important;
+    border-bottom: 1px solid @toolbar-border-bottom !important;
     padding-top: 0 !important;
     height: 50px !important;
-  }
-  
-  &.compact #toolbar .toolbar-label {
-    color: #aaa !important;
-  }
-  
-  &.compact #toolbar .toggled-on .toolbar-label {
-    color: #eee !important;
-  }
-  
-  &.compact #toolbar .toolbar-item.toggleable.toggled-on {
-    background-image: -webkit-linear-gradient(#333, #555) !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-  
-  &.compact .toolbar-item.close-left {
-    margin-top: 13px !important;
-  }
-  
-  &.compact #toolbar-controls {
-    margin-top: -5px !important;
-  }
-  
-  &.compact #toolbar-search-item {
+    }
+    
+    &.compact #toolbar .toolbar-label {
+    color: @toolbar-label !important;
+    }
+    
+    &.compact #toolbar .toggled-on .toolbar-label {
+    color: @toolbar-label-active !important;
+    }
+    
+    &.compact #toolbar .toolbar-item{
+    padding: 10px 15px !important;
+    }
+    
+    &.compact #toolbar .toolbar-item.toggleable.toggled-on {
+    background: @toolbar-bg-active !important;
+    padding: 10px 13px !important;
+    }
+    
+    &.compact .toolbar-item.close-left {
+    margin-top: 1px !important;
+    }
+    
+    &.compact #toolbar-controls {
+    margin-top: -4px !important;
+    }
+    
+    &.compact #toolbar-search-item {
     margin-top: 12px !important;
-  }
-  
-  &.compact #main {
+    }
+    
+    &.compact #main {
     top: 50px !important;
-  }
-  
-  &.compact #search-results-matches {
+    }
+    
+    &.compact #search-results-matches {
     color: #eee !important;
     text-shadow: none !important;
-  }
-
-  &.compact #search {
-    background: @background !important;
-  }
-  
-  /**********************************************/
-  /* Console
-  /**********************************************/
+    }
     
-    /**********************************************/
-    /* Messages
-    /**********************************************/
+    &.compact #search {
+    background: @background !important;
+    }
+  
+  
+    //Console Message Styles
     
     #console-messages {
       font-family: 'DroidSansMono', Menlo, monospace !important;
@@ -192,9 +194,8 @@
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTMzNzdGNUZDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTMzNzdGNjBDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y1REMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y1RUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pia6udAAAAB5SURBVHjaYvz//z8DMYAFxli9ejWI6oByK5AVhYaGIhRCgQsQGwOxIFTxe5gEE5pCVyA+C8RpQLwbqgmrwvdQxauhis6AbMamEASUkEwCabyHTWE51BQlqBNMoDSKQhckX3dCFd3DCB4g2AP16VkoGwUwEhvgAAEGAAzQHBRSxqPRAAAAAElFTkSuQmCC) !important;
     }
     
-    /**********************************************/
-    /* Prompt
-    /**********************************************/
+    
+    //Console Prompt Styles
     
     #console-prompt {
       color: #F1F1F1 !important;
@@ -205,13 +206,10 @@
       color: @foreground !important;
     }
 
-  /**********************************************/
-  /* Elements/Network/Scripts
-  /**********************************************/
 
-    /**********************************************/
-    /* Layout
-    /**********************************************/
+    //Elements/Network/Scripts Styles
+
+    //Layout Styles
     
     .script-view,
     .properties-tree,
@@ -242,9 +240,8 @@
       background-color: @selection !important;
     }
     
-    /**********************************************/
-    /* HTML
-    /**********************************************/
+    
+    //HTML Styles
     
     .webkit-html-comment {
       color: @html-comment !important;
@@ -276,9 +273,8 @@
       color: @html-link !important;
     }
     
-    /**********************************************/
-    /* CSS
-    /**********************************************/
+    
+    //CSS Styles
     
     .webkit-css-comment {
       color: @css-comment !important;
@@ -315,9 +311,8 @@
       color: @css-url !important;
     }
     
-    /**********************************************/
-    /* JavaScript
-    /**********************************************/
+    
+    //JavaScript Styles
     
     .webkit-line-content,
     .webkit-javascript-ident {
@@ -349,9 +344,8 @@
       color: @javascript-property-name !important;
     }
     
-    /**********************************************/
-    /* Everything Else
-    /**********************************************/
+    
+    //"Other" Styles
     
     .editing {
       color: @foreground !important;
@@ -478,8 +472,8 @@
     }
     
     .placard.selected {
-      background-image: -webkit-linear-gradient(@top-bar, darken(@top-bar, 30%)) !important;
-      border-top-color: darken(@top-bar, 30%) !important;
+      background-image: -webkit-linear-gradient(@toolbar-border-top, darken(@toolbar-border-top, 30%)) !important;
+      border-top-color: darken(@toolbar-border-top, 30%) !important;
     }
     
     .placard .title {
