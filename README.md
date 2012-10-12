@@ -13,4 +13,4 @@ Simply override `Custom.css` in the `User Stylesheets` directory:
 **Ubuntu (Chromium):** `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
 ## Screenshot
-![Screenshot](ressources/screenshot.png)
+![Screenshot](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot.png)
