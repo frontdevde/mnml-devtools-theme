@@ -10,7 +10,7 @@
 // globals
 @background:   #1d1f21;
 @current-line: #282a2e;
-@selection:    #373b41;
+@selection:    lighten(#1d1f21,3%);
 @foreground:   #c5c8c6;
 
 //toolbar
@@ -20,6 +20,11 @@
 @toolbar-bg-active: -webkit-linear-gradient(#444, #333);
 @toolbar-border-top: #C96666;
 @toolbar-border-bottom: #444;
+
+//statusbar
+@statusbar-border:      #444;
+@statusbar-text:        darken(#fff,60%);
+@statusbar-text-active: darken(#fff,15%);
 
 // html
 @html-attribute-name:  #BBDE57;
@@ -117,6 +122,60 @@
     }
   
   
+    //Statusbar Styles 
+    
+    .crumbs .crumb{
+        display: none;
+    }
+    
+    .status-bar{
+        border-color: @statusbar-border !important;
+        background: @background !important;
+    }
+    
+    .status-bar-item{
+        border-color: @statusbar-border !important;
+        -webkit-filter: grayscale(.75);
+        color: @statusbar-text !important;
+        text-shadow: none !important;
+    }
+
+    .glyph{
+        background-color: @statusbar-text !important;
+    }
+    
+    .glyph.shadow{
+        display: none;
+    }
+    
+    button.status-bar-item.toggled-on .glyph {
+        background-color: @statusbar-text-active !important;
+    }
+    
+    #error-warning-count{
+        color: @statusbar-text !important;
+        margin-right: 5px;
+    }
+    
+    #error-count-img,
+    #warning-count-img {
+        opacity: .5;
+        -webkit-filter: grayscale(.5);
+    }
+    
+    .scope-bar li{
+        margin: 1px 2px 0 !important;
+        padding: 2px 5px !important;
+        color: @statusbar-text !important;
+        text-shadow: none !important;
+    }
+    
+    .scope-bar li.selected, .scope-bar li:hover, .scope-bar li:active{
+        color: @statusbar-text-active !important;
+        background: #333 !important;
+    }
+
+    
     //Console Message Styles
     
     #console-messages {
@@ -317,6 +376,12 @@
       color: @css-url !important;
     }
     
+    .sidebar-separator{
+        padding: 3px 5px 5px !important;
+        background: @selection !important;
+        color: darken(#fff, 30%) !important;
+        text-shadow: none !important;
+    }
     
     //JavaScript Styles
     
@@ -543,4 +608,5 @@
       background-color: @selection !important;
       outline: 1px solid darken(@selection, 15%) !important;
     }
+    
 }
