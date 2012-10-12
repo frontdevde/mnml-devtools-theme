@@ -1,10 +1,11 @@
-# Mnml Theme
-A rather minimal theme for Chrome Developer Tools. Modifies Elements and Console view plus other small tweaks.
+# mnml DevTools Theme
+A not so minimal theme for the Chrome Developer Tools. 
+Modifies Elements and Console view, other views are on the way.
 
-Tested on Mac only.
+Tested on Mac.
 
 ## Installation 
-Simply override `Custom.css` in the `User Stylesheets` directory:
+Just locate the `User Stylesheets` directory and override the `Custom.css`:
 
 **Mac:** `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
 
@@ -13,7 +14,7 @@ Simply override `Custom.css` in the `User Stylesheets` directory:
 **Ubuntu (Chromium):** `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
 ## Customization
-Feel free to fork and customize the theme to your needs. If you are missing some selectors just open `chrome-devtools://devtools/devTools.css` in Chrome and get a detailed list of nearly all possible selectors and their default styles.
+Feel free to fork and customize the theme to your needs. Missing some selectors? Just navigate Chrome to `chrome-devtools://devtools/devTools.css` and get a detailed list of nearly all possible selectors and their default styles.
 
 ## Screenshots
 ![Screenshot](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot.png)
