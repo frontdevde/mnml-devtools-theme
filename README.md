@@ -14,3 +14,4 @@ Simply override `Custom.css` in the `User Stylesheets` directory:
 
 ## Screenshot
 ![Screenshot](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot.png)
+![Screenshot1](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot1.png)
