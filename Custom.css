@@ -188,13 +188,13 @@
   color: #7c7c7c !important;
 }
 #-webkit-web-inspector .webkit-html-tag {
-  color: #c96666 !important;
+  color: #e3584d !important;
 }
 #-webkit-web-inspector .webkit-html-attribute-name {
-  color: #c96666 !important;
+  color: #bbde57 !important;
 }
 #-webkit-web-inspector .webkit-html-attribute-value {
-  color: #b5bc67 !important;
+  color: #e4ff9b !important;
 }
 #-webkit-web-inspector .webkit-html-text-node .webkit-html-css-node {
   color: #c2c3c3 !important;
@@ -204,14 +204,14 @@
 }
 #-webkit-web-inspector .webkit-html-resource-link,
 #-webkit-web-inspector .webkit-html-external-link {
-  color: #eec574 !important;
+  color: #e3b959 !important;
 }
 #-webkit-web-inspector .webkit-css-comment {
   color: #7c7c7c !important;
 }
 #-webkit-web-inspector .webkit-css-selector,
 #-webkit-web-inspector .styles-selector {
-  color: #c96666 !important;
+  color: #bbde57 !important;
 }
 #-webkit-web-inspector .webkit-css-property {
   color: #eec574 !important;
@@ -314,7 +314,7 @@
   color: #82a1be !important;
 }
 #-webkit-web-inspector .styles-selector {
-  color: #c96666 !important;
+  color: #bbde57 !important;
 }
 #-webkit-web-inspector .section .header {
   color: #CCC !important;
