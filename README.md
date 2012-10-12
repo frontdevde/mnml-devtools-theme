@@ -1,5 +1,5 @@
 # Mnml Theme
-A rather minimal theme for Chrome Developer Tools loosely inspired by Tomorrow Theme. Modifies the source code (elements, resources), Console and other smaller tweaks.
+A rather minimal theme for Chrome Developer Tools. Modifies Elements and Console view plus other small tweaks.
 
 Tested on Mac only.
 
