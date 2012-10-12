@@ -12,9 +12,9 @@ Simply override `Custom.css` in the `User Stylesheets` directory:
 
 **Ubuntu (Chromium):** `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
+## Customization
+Feel free to fork and customize the theme to your needs. If you are missing some selectors just open `chrome-devtools://devtools/devTools.css` in Chrome and get a detailed list of nearly all possible selectors and their default styles.
+
 ## Screenshots
 ![Screenshot](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot.png)
 ![Screenshot1](https://raw.github.com/frontdevDE/Mnml_DevTools_Theme/master/ressources/screenshot1.png)
-
-## Customization
-Feel free to fork and customize the theme to your needs. If you are missing some selectors just open `chrome-devtools://devtools/devTools.css` in Chrome and get a detailed list of nearly all possible selectors and their default styles.
