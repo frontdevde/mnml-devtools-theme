@@ -64,31 +64,36 @@
 #-webkit-web-inspector {
   
     ::selection {
-    background: #888;
-    opacity: 1;
+        background: #888;
+        opacity: 1;
     }
     
     
     //Toolbar Styles
     
     &.compact #toolbar {
-    background: @toolbar-bg !important;
-    border-top: 5px solid @toolbar-border-top !important;
-    border-bottom: 1px solid @toolbar-border-bottom !important;
-    padding-top: 0 !important;
-    height: 50px !important;
+        background: @toolbar-bg !important;
+        border-top: 5px solid @toolbar-border-top !important;
+        border-bottom: 1px solid @toolbar-border-bottom !important;
+        padding-top: 0 !important;
+        height: 50px !important;
     }
     
     &.compact #toolbar .toolbar-label {
-    color: @toolbar-label !important;
+        color: @toolbar-label !important;
     }
     
     &.compact #toolbar .toggled-on .toolbar-label {
-    color: @toolbar-label-active !important;
+        color: @toolbar-label-active !important;
     }
     
     &.compact #toolbar .toolbar-item{
-    padding: 10px 15px !important;
+        padding: 10px 15px !important;
+        .toolbar-icon{
+            -webkit-filter: grayscale(.3);
+            -webkit-transform: scale(.9);
+        }
+    
     }
     
     &.compact #toolbar .toolbar-item.toggleable.toggled-on {
@@ -97,28 +102,28 @@
     }
     
     &.compact .toolbar-item.close-left {
-    margin-top: 1px !important;
+        margin-top: 1px !important;
     }
     
     &.compact #toolbar-controls {
-    margin-top: -4px !important;
+        margin-top: -4px !important;
     }
     
     &.compact #toolbar-search-item {
-    margin-top: 12px !important;
+        margin-top: 12px !important;
     }
     
     &.compact #main {
-    top: 50px !important;
+        top: 50px !important;
     }
     
     &.compact #search-results-matches {
-    color: #eee !important;
-    text-shadow: none !important;
+        color: #eee !important;
+        text-shadow: none !important;
     }
     
     &.compact #search {
-    background: @background !important;
+        background: @background !important;
     }
   
   

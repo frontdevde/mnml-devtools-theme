@@ -26,6 +26,10 @@
 #-webkit-web-inspector.compact #toolbar .toolbar-item {
   padding: 10px 15px !important;
 }
+#-webkit-web-inspector.compact #toolbar .toolbar-item .toolbar-icon {
+  -webkit-filter: grayscale(0.3);
+  -webkit-transform: scale(0.9);
+}
 #-webkit-web-inspector.compact #toolbar .toolbar-item.toggleable.toggled-on {
   background: -webkit-linear-gradient(#444444, #333333) !important;
   padding: 10px 13px !important;
