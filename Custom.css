@@ -527,3 +527,6 @@
   background-color: #242729 !important;
   outline: 1px solid #000000 !important;
 }
+body.compact .help-window-outer {
+  top: 50px !important;
+}
