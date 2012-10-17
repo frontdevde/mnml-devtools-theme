@@ -9,7 +9,7 @@ Just locate the `User Stylesheets` directory and override the `Custom.css`:
 
 **Mac:** `~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
 
-**PC:** `C:\Users\YourUsername\AppData\Local\Google\Chrome\UserData\Default\User StyleSheets\Custom.css`
+**PC:** `C:\Users\YourUsername\AppData\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css`
 
 **Ubuntu (Chromium):** `~/.config/chromium/Default/User StyleSheets/Custom.css`
 
