@@ -138,6 +138,13 @@
         -webkit-filter: grayscale(.75);
         color: @statusbar-text !important;
         text-shadow: none !important;
+        .long-click-glyph{
+            display: none;
+        }
+    }
+    
+    .status-bar-items{
+        border: 0 !important;
     }
 
     .glyph{
@@ -162,19 +169,67 @@
         opacity: .5;
         -webkit-filter: grayscale(.5);
     }
+    .scope-bar{
+        padding: 0 3px !important;
+        li{
+            margin: 1px 2px 0 !important;
+            padding: 2px 5px !important;
+            color: @statusbar-text !important;
+            text-shadow: none !important;
+            &.selected,
+            &:hover,
+            &:active{
+                color: @statusbar-text-active !important;
+                background: #333 !important;
+            }
+        }
+    }
     
-    .scope-bar li{
-        margin: 1px 2px 0 !important;
-        padding: 2px 5px !important;
+    .scope-bar-divider{
+        height: 13px !important;
+        margin: 0 2px;
+        background-color: @statusbar-border !important;
+    }
+    
+    .status-bar-select-container{
+        position: relative;
+        background: none !important;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 7px;
+            right: 3px;
+            width: 0;
+            height: 0;
+            opacity: .75;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid @statusbar-text;
+        }
+    }
+
+    .timeline-records-counter{
         color: @statusbar-text !important;
         text-shadow: none !important;
     }
     
-    .scope-bar li.selected, .scope-bar li:hover, .scope-bar li:active{
-        color: @statusbar-text-active !important;
-        background: #333 !important;
+    .timeline-category-statusbar-item{
+        line-height: 20px !important;
+        margin-left: 5px !important;
+        &:first-child{
+            margin-left: 0 !important;
+        }
+        .timeline-category-checkbox{
+            margin-right: 5px !important;
+            border-radius: 0 !important;
+            &:before{
+                top: -2px !important;
+                left: -1px !important;
+            }
+        }
     }
-
+    
     
     //Console Message Styles
     
