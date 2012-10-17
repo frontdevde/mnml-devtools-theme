@@ -360,6 +360,89 @@
       background-color: @selection !important;
     }
     
+    // Element Sidebar Styles
+    
+    .styles-sidebar-separator,
+    .pane > .title {
+        position: relative;
+        height: 23px !important;
+        padding-left: 20px !important;
+        line-height: 20px !important;
+        border-top-color: #666 !important;
+        border-bottom-color: #333 !important;
+        font-weight: normal !important;
+        color: rgba(255,255,255,.85) !important;
+        text-shadow: none !important;
+        text-overflow: ellipsis !important;
+        background-image: @toolbar-bg !important;
+        &:before{
+            content: "" !important;
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            width: 0 !important;
+            height: 0 !important;
+            border-left: 8px solid @statusbar-text;
+            border-bottom: 4px solid transparent;
+            border-top: 4px solid transparent;
+        }
+    }
+    
+    .pane.expanded > .title{
+        &:before{
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid @statusbar-text;
+        }
+    }
+    
+    .sidebar-pane-subtitle{
+        right: 5px !important;
+        font-size: 11px !important;
+        input[type=checkbox]{
+            margin-right: 3px;
+        }
+    }
+    
+    .pane > .title > button,
+    .pane > .title > select {
+        -webkit-filter: invert(1);
+    }
+    
+    .metrics {
+        .position,
+        .margin,
+        .border,
+        .padding,
+        .content{
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+        .position{
+            background: lighten(@background, 10%) !important;
+        }
+        .margin{
+            background: lighten(@background, 20%) !important;
+        }
+        .border{
+            background: lighten(@background, 30%) !important;
+        }
+        .padding{
+            background: lighten(@background, 40%) !important;
+        }
+        .content{
+            background: lighten(@background, 50%) !important;
+        }
+        .label,
+        .top,
+        .bottom,
+        .right,
+        .left{
+            color: #fff !important;
+        }
+        
+    }
+    
     
     //HTML Styles
     
@@ -487,21 +570,6 @@
       color: #7C7C7C !important;
     }
     
-    .styles-sidebar-separator,
-    .pane > .title {
-      background-image: -webkit-linear-gradient(#555, #333) !important;
-      border-top-color: #666 !important;
-      border-bottom-color: #333 !important;
-      color: #bbb !important;
-      text-shadow: black 0 1px 0 !important;
-      text-overflow: ellipsis !important;
-    }
-    
-    .pane > .title > button,
-    .pane > .title > select {
-      -webkit-filter: invert(1);
-    }
-    
     .split-view-sidebar-right {
       background: #222 !important;
     }
@@ -552,14 +620,6 @@
     
     .properties .value {
       color: @javascript-property-value !important;
-    }
-    
-    .metrics {
-      color: #333 !important;
-    }
-    
-    .metrics .border {
-      border-color: #FFF !important;
     }
     
     .event-bars .event-bar .header .title {

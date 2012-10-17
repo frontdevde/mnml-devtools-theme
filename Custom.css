@@ -243,6 +243,78 @@
 #-webkit-web-inspector #elements-content .selected {
   background-color: #242729 !important;
 }
+#-webkit-web-inspector .styles-sidebar-separator,
+#-webkit-web-inspector .pane > .title {
+  position: relative;
+  height: 23px !important;
+  padding-left: 20px !important;
+  line-height: 20px !important;
+  border-top-color: #666 !important;
+  border-bottom-color: #333 !important;
+  font-weight: normal !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-shadow: none !important;
+  text-overflow: ellipsis !important;
+  background-image: -webkit-linear-gradient(#555555, #333333) !important;
+}
+#-webkit-web-inspector .styles-sidebar-separator:before,
+#-webkit-web-inspector .pane > .title:before {
+  content: "" !important;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 8px solid #666666;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+#-webkit-web-inspector .pane.expanded > .title:before {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #666666;
+}
+#-webkit-web-inspector .sidebar-pane-subtitle {
+  right: 5px !important;
+  font-size: 11px !important;
+}
+#-webkit-web-inspector .sidebar-pane-subtitle input[type=checkbox] {
+  margin-right: 3px;
+}
+#-webkit-web-inspector .pane > .title > button,
+#-webkit-web-inspector .pane > .title > select {
+  -webkit-filter: invert(1);
+}
+#-webkit-web-inspector .metrics .position,
+#-webkit-web-inspector .metrics .margin,
+#-webkit-web-inspector .metrics .border,
+#-webkit-web-inspector .metrics .padding,
+#-webkit-web-inspector .metrics .content {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+#-webkit-web-inspector .metrics .position {
+  background: #35393c !important;
+}
+#-webkit-web-inspector .metrics .margin {
+  background: #4d5257 !important;
+}
+#-webkit-web-inspector .metrics .border {
+  background: #656c72 !important;
+}
+#-webkit-web-inspector .metrics .padding {
+  background: #7d858d !important;
+}
+#-webkit-web-inspector .metrics .content {
+  background: #989fa5 !important;
+}
+#-webkit-web-inspector .metrics .label,
+#-webkit-web-inspector .metrics .top,
+#-webkit-web-inspector .metrics .bottom,
+#-webkit-web-inspector .metrics .right,
+#-webkit-web-inspector .metrics .left {
+  color: #fff !important;
+}
 #-webkit-web-inspector .webkit-html-comment {
   color: #7c7c7c !important;
 }
@@ -332,19 +404,6 @@
 #-webkit-web-inspector .subtitle {
   color: #7C7C7C !important;
 }
-#-webkit-web-inspector .styles-sidebar-separator,
-#-webkit-web-inspector .pane > .title {
-  background-image: -webkit-linear-gradient(#555555, #333333) !important;
-  border-top-color: #666 !important;
-  border-bottom-color: #333 !important;
-  color: #bbb !important;
-  text-shadow: black 0 1px 0 !important;
-  text-overflow: ellipsis !important;
-}
-#-webkit-web-inspector .pane > .title > button,
-#-webkit-web-inspector .pane > .title > select {
-  -webkit-filter: invert(1);
-}
 #-webkit-web-inspector .split-view-sidebar-right {
   background: #222 !important;
 }
@@ -386,12 +445,6 @@
 }
 #-webkit-web-inspector .properties .value {
   color: #c2c3c3 !important;
-}
-#-webkit-web-inspector .metrics {
-  color: #333 !important;
-}
-#-webkit-web-inspector .metrics .border {
-  border-color: #FFF !important;
 }
 #-webkit-web-inspector .event-bars .event-bar .header .title {
   color: #969796 !important;
