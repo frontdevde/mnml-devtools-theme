@@ -397,6 +397,19 @@
 #-webkit-web-inspector .event-properties .name {
   color: #82a1be !important;
 }
+#-webkit-web-inspector .popover {
+  color: #ffffff !important;
+}
+#-webkit-web-inspector .popover .arrow {
+  display: none;
+}
+#-webkit-web-inspector .popover .network-timing-bar {
+  background: grey;
+  border-color: grey !important;
+}
+#-webkit-web-inspector .network-timing-bar-title {
+  color: #ffffff !important;
+}
 #-webkit-web-inspector .editing {
   color: #c5c8c6 !important;
   background-color: #000 !important;
