@@ -404,8 +404,8 @@
   display: none;
 }
 #-webkit-web-inspector .popover .network-timing-bar {
-  background: grey;
-  border-color: grey !important;
+  background: #808080 !important;
+  border-color: #808080 !important;
 }
 #-webkit-web-inspector .network-timing-bar-title {
   color: #ffffff !important;
