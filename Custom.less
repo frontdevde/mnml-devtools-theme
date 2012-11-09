@@ -494,8 +494,13 @@
     }
     
     .webkit-css-selector,
-    .styles-selector {
+    .styles-selector,
+    .styles-section .selector-matches{
       color: @css-selector !important;
+    }
+    
+    .styles-section .selector{
+        color: lighten(@css-selector,15%) !important;
     }
     
     .webkit-css-property {
