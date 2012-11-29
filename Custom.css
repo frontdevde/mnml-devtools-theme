@@ -444,6 +444,13 @@
   margin-left: -5px !important;
   opacity: 0.6 !important;
 }
+#-webkit-web-inspector .outline-disclosure ol:focus li {
+  line-height: 16px;
+}
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected {
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 16px;
+}
 #-webkit-web-inspector .section.expanded > .header::before,
 #-webkit-web-inspector .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector .event-bars .event-bar.expanded .header::before,

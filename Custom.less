@@ -624,6 +624,14 @@
       opacity: 0.6 !important;
     }
     
+    .outline-disclosure ol:focus li{
+        line-height: 16px;
+        &.selected{
+            outline: 1px solid rgba(255, 255, 255, .1);
+            line-height: 16px;
+        }
+    }
+    
     .section.expanded > .header::before,
     .properties-tree li.parent.expanded::before,
     .event-bars .event-bar.expanded .header::before,
