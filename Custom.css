@@ -10,47 +10,49 @@
   background: #888;
   opacity: 1;
 }
-#-webkit-web-inspector.compact #toolbar {
+#-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#555555, #333333) !important;
   border-top: 5px solid #c96666 !important;
   border-bottom: 1px solid #444444 !important;
   padding-top: 0 !important;
   height: 50px !important;
 }
-#-webkit-web-inspector.compact #toolbar .toolbar-label {
+#-webkit-web-inspector #toolbar .toolbar-label {
   color: #ffffff !important;
 }
-#-webkit-web-inspector.compact #toolbar .toggled-on .toolbar-label {
+#-webkit-web-inspector #toolbar .toggled-on .toolbar-label {
   color: #ffffff !important;
 }
-#-webkit-web-inspector.compact #toolbar .toolbar-item {
+#-webkit-web-inspector #toolbar .toolbar-item {
+  height: 45px !important;
   padding: 10px 15px !important;
 }
-#-webkit-web-inspector.compact #toolbar .toolbar-item .toolbar-icon {
+#-webkit-web-inspector #toolbar .toolbar-item .toolbar-icon {
   -webkit-filter: grayscale(0.3);
   -webkit-transform: scale(0.9);
 }
-#-webkit-web-inspector.compact #toolbar .toolbar-item.toggleable.toggled-on {
+#-webkit-web-inspector #toolbar .toolbar-item.toggleable.toggled-on {
   background: -webkit-linear-gradient(#444444, #333333) !important;
   padding: 10px 13px !important;
 }
-#-webkit-web-inspector.compact .toolbar-item.close-left {
+#-webkit-web-inspector #toolbar .toolbar-item.close-left {
   margin-top: 1px !important;
 }
-#-webkit-web-inspector.compact #toolbar-controls {
-  margin-top: -4px !important;
+#-webkit-web-inspector #toolbar-controls {
+  margin-top: 2px !important;
+  color: #ffffff !important;
 }
-#-webkit-web-inspector.compact #toolbar-search-item {
+#-webkit-web-inspector #toolbar-search-item {
   margin-top: 12px !important;
 }
-#-webkit-web-inspector.compact #main {
+#-webkit-web-inspector #main {
   top: 50px !important;
 }
-#-webkit-web-inspector.compact #search-results-matches {
+#-webkit-web-inspector #search-results-matches {
   color: #eee !important;
   text-shadow: none !important;
 }
-#-webkit-web-inspector.compact #search {
+#-webkit-web-inspector #search {
   background: #1d1f21 !important;
 }
 #-webkit-web-inspector .crumbs .crumb {
