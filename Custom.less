@@ -8,10 +8,12 @@
 /**********************************************/
 
 // globals
-@background:   #1d1f21;
-@current-line: #282a2e;
-@selection:    lighten(#1d1f21,3%);
-@foreground:   #c5c8c6;
+@font:          #fff;
+@border:        #444;
+@background:    #1d1f21;
+@current-line:  #282a2e;
+@selection:     lighten(#1d1f21,3%);
+@foreground:    #c5c8c6;
 
 //toolbar
 @toolbar-label: #fff;
@@ -99,8 +101,8 @@
                 background: @toolbar-bg-active !important;
                 padding: 10px 13px !important;
             }
-            &.close-left {
-                margin-top: 1px !important;
+            &.close-left {  
+                padding-right: 22px !important;
             }
         }
     }
@@ -125,6 +127,10 @@
     
     #search {
         background: @background !important;
+    }
+    
+    .resources-divider-label{
+        color: @toolbar-label !important;
     }
   
   
@@ -332,6 +338,32 @@
       color: @foreground !important;
     }
 
+
+    //Network Styles
+    
+    #network-container{
+        th, 
+        td,
+        .data-grid,
+        .network-summary-bar{
+            color: @font;
+            background: @background !important;
+            border-color: @border !important;
+        }
+        th{
+            padding-left: 10px !important;
+        }
+        .network-summary-bar{
+            border-top: 1px solid @border;
+        }
+        .network-graph-label{
+            color: @font !important;
+            text-shadow: none !important;
+        }
+        .timeline-column select{
+            color: @font !important;
+        }
+    }
 
     //Elements/Network/Scripts Styles
 
