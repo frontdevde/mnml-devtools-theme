@@ -440,7 +440,8 @@
 #-webkit-web-inspector .network-timing-bar-title {
   color: #ffffff !important;
 }
-#-webkit-web-inspector .editing {
+#-webkit-web-inspector .editing,
+#-webkit-web-inspector .editing * {
   color: #c5c8c6 !important;
   background-color: #000 !important;
 }
