@@ -470,10 +470,10 @@
   margin-left: -5px !important;
   opacity: 0.6 !important;
 }
-#-webkit-web-inspector .outline-disclosure ol:focus li {
+#-webkit-web-inspector .outline-disclosure ol li {
   line-height: 16px;
 }
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected {
+#-webkit-web-inspector .outline-disclosure ol li.selected {
   outline: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 16px;
 }
