@@ -1,0 +1,12 @@
+{
+  "name": "mnml-devtools-theme",
+  "version": "0.1.0",
+  "description": "Not so minimal Chrome devtools theme",
+  "main": "Custom.css",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.5.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.3"
+  }
+}
