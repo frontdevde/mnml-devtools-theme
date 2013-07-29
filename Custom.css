@@ -451,6 +451,7 @@
 #-webkit-web-inspector .styles-section,
 #-webkit-web-inspector .subtitle {
   color: #7C7C7C !important;
+  background: #1d1f21 !important;
 }
 #-webkit-web-inspector .split-view-sidebar-right {
   background: #222 !important;
