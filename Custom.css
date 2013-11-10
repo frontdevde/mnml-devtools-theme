@@ -304,6 +304,27 @@
   border-right: 4px solid transparent;
   border-top: 8px solid #666666;
 }
+#-webkit-web-inspector .sidebar-tabbed-pane {
+  color: #ffffff !important;
+}
+#-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header {
+  height: 28px !important;
+  padding-top: 5px !important;
+  background-color: #1d1f21 !important;
+}
+#-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header-tab.selected {
+  background-color: #35393c !important;
+}
+#-webkit-web-inspector .tabbed-pane-header-tabs-drop-down {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+#-webkit-web-inspector .sidebar-pane {
+  background: #1d1f21 !important;
+}
+#-webkit-web-inspector .sidebar-pane-toolbar > * {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
 #-webkit-web-inspector .sidebar-pane-subtitle {
   right: 5px !important;
   font-size: 11px !important;

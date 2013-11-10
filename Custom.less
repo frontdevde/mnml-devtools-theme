@@ -433,7 +433,34 @@
             border-top: 8px solid @statusbar-text;
         }
     }
+
+    .sidebar-tabbed-pane{ 
+        color: @toolbar-label !important;
+        .tabbed-pane-header{
+            height: 28px !important;
+            padding-top: 5px !important;
+            background-color: @background !important;
+        }
+        .tabbed-pane-header-tab{
+            &.selected{
+                background-color: lighten(@background,10%) !important;
+            }
+        }
+    }
     
+    .tabbed-pane-header-tabs-drop-down{
+        color: @toolbar-label !important;
+        opacity: 1 !important;
+    }
+
+    .sidebar-pane{
+        background: @background !important;
+    }
+
+    .sidebar-pane-toolbar > *{
+        background-color: rgba(255,255,255,.75) !important;
+    }
+
     .sidebar-pane-subtitle{
         right: 5px !important;
         font-size: 11px !important;
