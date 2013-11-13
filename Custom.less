@@ -666,24 +666,25 @@
       background: #222 !important;
     }
     
-    .section > .header::before,
-    .properties-tree li.parent::before,
-    .event-bars .event-bar .header::before,
-    .outline-disclosure li.parent::before,
-    .styles-section.matched-styles .properties li.parent .expand-element {
-      content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
-    }
-    
     .styles-section .properties li.parent::before,
     .styles-section .properties li.parent.expanded::before {
       content: none !important;
     }
     
     .styles-section.matched-styles .properties li.parent .expand-element {
-      margin-right: 1px !important;
-      margin-left: -5px !important;
-      opacity: 0.6 !important;
+        margin-right: 3px !important;
+        margin-left: -5px !important;
+        opacity: 0.6 !important;
     }
+
+    .section > .header::before,
+    .properties-tree li.parent::before,
+    .event-bars .event-bar .header::before,
+    .styles-section.matched-styles .properties li.parent .expand-element{
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
     
     .outline-disclosure ol li{
         line-height: 16px;
