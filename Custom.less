@@ -71,8 +71,7 @@
 #-webkit-web-inspector {
   
     ::selection {
-        background: #888;
-        opacity: 1;
+        background: rgba(34, 84, 87,.35) !important;
     }
     
     
@@ -395,7 +394,7 @@
     }
     
     #elements-content .selected {
-      background-color: @selection !important;
+      background-color: lighten(@selection,5%) !important;
     }
     
     // Element Sidebar Styles
