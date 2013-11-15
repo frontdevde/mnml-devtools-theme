@@ -833,10 +833,26 @@ body.compact .help-window-outer{
     top: 50px !important;
 }
 
-#settings-screen .help-window-main{
-    color: @font !important;
+#settings-screen{ 
+    .help-window-main{
+        color: @font !important;
+        a{
+            color: @toolbar-border-top !important;
+            &:hover{
+                opacity: .9;
+            }
+        }
+    }
 }
 
-.settings-tab select{
-    color: @font-dark !important;
+.settings-tab{ 
+    select{
+        color: @font-dark !important;
+    }
+    .help-block label:hover{
+        color: darken(@font,20%) !important;
+    }
+    .help-section-title{
+        color: @font !important;
+    }
 }

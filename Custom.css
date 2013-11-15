@@ -612,6 +612,18 @@ body.compact .help-window-outer {
 #settings-screen .help-window-main {
   color: #ffffff !important;
 }
+#settings-screen .help-window-main a {
+  color: #c96666 !important;
+}
+#settings-screen .help-window-main a:hover {
+  opacity: .9;
+}
 .settings-tab select {
   color: #1a1919 !important;
+}
+.settings-tab .help-block label:hover {
+  color: #cccccc !important;
+}
+.settings-tab .help-section-title {
+  color: #ffffff !important;
 }
