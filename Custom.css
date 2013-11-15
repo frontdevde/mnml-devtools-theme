@@ -7,8 +7,7 @@
 /*
 /**********************************************/
 #-webkit-web-inspector ::selection {
-  background: #888;
-  opacity: 1;
+  background: rgba(34, 84, 87, 0.35) !important;
 }
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#555555, #333333) !important;
@@ -271,7 +270,7 @@
   background: rgba(255, 255, 255, 0.2) !important;
 }
 #-webkit-web-inspector #elements-content .selected {
-  background-color: #242729 !important;
+  background-color: #303337 !important;
 }
 #-webkit-web-inspector .styles-sidebar-separator,
 #-webkit-web-inspector .pane > .title {
@@ -310,10 +309,13 @@
 #-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header {
   height: 28px !important;
   padding-top: 5px !important;
-  background-color: #1d1f21 !important;
+  background: #1d1f21 !important;
 }
 #-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header-tab.selected {
   background-color: #35393c !important;
+}
+#-webkit-web-inspector .tabbed-pane {
+  background: #1d1f21 !important;
 }
 #-webkit-web-inspector .tabbed-pane-header-tabs-drop-down {
   color: #ffffff !important;
@@ -477,21 +479,21 @@
 #-webkit-web-inspector .split-view-sidebar-right {
   background: #222 !important;
 }
-#-webkit-web-inspector .section > .header::before,
-#-webkit-web-inspector .properties-tree li.parent::before,
-#-webkit-web-inspector .event-bars .event-bar .header::before,
-#-webkit-web-inspector .outline-disclosure li.parent::before,
-#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
-  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
-}
 #-webkit-web-inspector .styles-section .properties li.parent::before,
 #-webkit-web-inspector .styles-section .properties li.parent.expanded::before {
   content: none !important;
 }
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
-  margin-right: 1px !important;
+  margin-right: 3px !important;
   margin-left: -5px !important;
   opacity: 0.6 !important;
+}
+#-webkit-web-inspector .section > .header::before,
+#-webkit-web-inspector .properties-tree li.parent::before,
+#-webkit-web-inspector .event-bars .event-bar .header::before,
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 #-webkit-web-inspector .outline-disclosure ol li {
   line-height: 16px;
@@ -606,4 +608,10 @@
 }
 body.compact .help-window-outer {
   top: 50px !important;
+}
+#settings-screen .help-window-main {
+  color: #ffffff !important;
+}
+.settings-tab select {
+  color: #1a1919 !important;
 }
