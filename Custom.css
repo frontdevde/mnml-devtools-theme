@@ -7,7 +7,7 @@
 /*
 /**********************************************/
 #-webkit-web-inspector ::selection {
-  background: rgba(34, 84, 87, 0.35) !important;
+  background: rgba(34, 84, 87, 0.75) !important;
 }
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#555555, #333333) !important;
