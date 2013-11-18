@@ -330,6 +330,7 @@
 #-webkit-web-inspector .sidebar-pane-subtitle {
   right: 5px !important;
   font-size: 11px !important;
+  background: #1d1f21 !important;
 }
 #-webkit-web-inspector .sidebar-pane-subtitle input[type=checkbox] {
   margin-right: 3px;
@@ -625,5 +626,8 @@ body.compact .help-window-outer {
   color: #cccccc !important;
 }
 .settings-tab .help-section-title {
+  color: #ffffff !important;
+}
+.CodeMirror {
   color: #ffffff !important;
 }
