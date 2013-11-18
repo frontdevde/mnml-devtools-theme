@@ -16,6 +16,18 @@ Just locate the `User Stylesheets` directory and override the `Custom.css`:
 ## Customization
 Feel free to fork and customize the theme to your needs. Missing some selectors? Just navigate Chrome to `chrome-devtools://devtools/devTools.css` and get a detailed list of nearly all possible selectors and their default styles.
 
+#### To make customization easier use the supplied Grunt tasks
+
+To install grunt and dependencies
+
+	# sudo npm install -g grunt-cli
+	# npm install
+
+Then to watch, compile and copy the files use
+
+	# grunt watch:mac
+
+
 ## Theme preview
 ![Elements view](https://raw.github.com/frontdevDE/mnml-devtools-theme/master/ressources/screenshot.png)
 ![Options view](https://raw.github.com/frontdevDE/mnml-devtools-theme/master/ressources/screenshot_options.png)
