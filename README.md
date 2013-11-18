@@ -16,7 +16,7 @@ Just locate the `User Stylesheets` directory and override the `Custom.css`:
 ## Customization
 Feel free to fork and customize the theme to your needs. Missing some selectors? Just navigate Chrome to `chrome-devtools://devtools/devTools.css` and get a detailed list of nearly all possible selectors and their default styles.
 
-#### To make customization easier use the supplied Grunt tasks
+#### Easier customization via Grunt task (Mac)
 
 To install grunt and dependencies
 
