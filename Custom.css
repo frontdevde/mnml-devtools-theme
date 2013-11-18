@@ -82,6 +82,12 @@
 #-webkit-web-inspector .glyph.shadow {
   display: none;
 }
+#-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph {
+  background-color: #733373 !important;
+}
+#-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph {
+  background-color: #467ede !important;
+}
 #-webkit-web-inspector button.status-bar-item.toggled-on .glyph {
   background-color: #d9d9d9 !important;
 }

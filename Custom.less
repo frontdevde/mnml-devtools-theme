@@ -167,6 +167,14 @@
         display: none;
     }
     
+    .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph{
+        background-color: mix(@statusbar-text, rgb(128, 0, 128), 50%) !important;
+    }
+
+    .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph{
+        background-color: mix(@statusbar-text, rgb(66, 129, 235), 10%) !important;
+    }
+
     button.status-bar-item.toggled-on .glyph {
         background-color: @statusbar-text-active !important;
     }
