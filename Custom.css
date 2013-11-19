@@ -634,6 +634,9 @@ body.compact .help-window-outer {
 .settings-tab .help-section-title {
   color: #ffffff !important;
 }
+.no-file-systems-message {
+  color: #1a1919 !important;
+}
 .CodeMirror {
   color: #ffffff !important;
 }
