@@ -681,3 +681,7 @@ div.sidebar-pane-stack#scripts-debug-sidebar-contents {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
+.navigator .icon {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
