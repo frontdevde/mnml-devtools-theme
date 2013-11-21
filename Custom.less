@@ -47,6 +47,7 @@
 @css-special-rule: #B094BB;
 @css-string:       #B5BC67;
 @css-url:          #EEC574;
+@css-attribute:    #C2C3C3;
 
 // javascript
 @javascript-comment:        #7C7C7C;
@@ -870,7 +871,7 @@ body.compact .help-window-outer{
     color: @font-dark !important;
 }
 
-// Sources Tab
+// CodeMirror
 
 .CodeMirror{
     color: @font !important;
@@ -878,6 +879,40 @@ body.compact .help-window-outer{
         background-color: @background !important;
     }
 }
+
+.cm-js-keyword{
+    color: @javascript-keyword !important;
+}
+
+.cm-js-number{
+    color: @javascript-number !important;
+}
+
+.cm-js-string{
+    color: @javascript-keyword !important;
+}
+.cm-css-comment,
+.cm-js-comment{
+    color: @javascript-comment !important;
+}
+
+.webkit-html-css-node{
+    color: @css-selector !important;
+}
+
+.cm-css-meta,
+.cm-css-property, 
+.webkit-css-property{
+    color: @css-property !important;
+}
+
+.cm-css-string-2,
+.cm-css-number,
+.cm-css-atom{
+    color: @css-attribute !important;
+}
+
+// Sources Tab
 
 .navigator-tabbed-pane,
 #scripts-editor-container-tabbed-pane{ 

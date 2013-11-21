@@ -643,6 +643,32 @@ body.compact .help-window-outer {
 .CodeMirror .CodeMirror-gutters {
   background-color: #1d1f21 !important;
 }
+.cm-js-keyword {
+  color: #db925f !important;
+}
+.cm-js-number {
+  color: #db925f !important;
+}
+.cm-js-string {
+  color: #db925f !important;
+}
+.cm-css-comment,
+.cm-js-comment {
+  color: #7c7c7c !important;
+}
+.webkit-html-css-node {
+  color: #bbde57 !important;
+}
+.cm-css-meta,
+.cm-css-property,
+.webkit-css-property {
+  color: #eec574 !important;
+}
+.cm-css-string-2,
+.cm-css-number,
+.cm-css-atom {
+  color: #c2c3c3 !important;
+}
 .navigator-tabbed-pane .tabbed-pane-header,
 #scripts-editor-container-tabbed-pane .tabbed-pane-header {
   height: 28px !important;
