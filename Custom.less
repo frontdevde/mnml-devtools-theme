@@ -878,3 +878,53 @@ body.compact .help-window-outer{
         background-color: @background !important;
     }
 }
+
+.navigator-tabbed-pane,
+#scripts-editor-container-tabbed-pane{ 
+    .tabbed-pane-header{
+        height: 28px !important;
+        padding-top: 5px !important;
+        background-image: none !important;
+    }
+}
+
+.navigator-tabbed-pane .tabbed-pane-content{
+    color: @font !important;
+}
+
+.status-bar-item.scripts-navigator-show-hide-button, 
+.status-bar-item.scripts-debugger-show-hide-button{
+    top: 2px !important;
+}
+
+.tabbed-pane-header-tab{
+    color: darken(@font,30%) !important;
+    border-color: @toolbar-border-bottom !important; 
+    background-color: lighten(@background,5%) !important;
+    &.selected{
+        color: @font !important;
+        border-color: grey !important;    
+        background-color: lighten(@background,10%) !important;
+    }
+
+}
+
+#scripts-sidebar-stack-pane,
+div.sidebar-pane-stack#scripts-debug-sidebar-contents{
+    background: @background !important;
+}
+
+.sidebar-pane{
+    .body{
+        color: @font !important;
+    }
+}
+
+.sidebar-pane-title{
+    color: @font !important;
+    background: lighten(@background,5%) !important;
+    &:before{
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+}

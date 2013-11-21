@@ -643,3 +643,41 @@ body.compact .help-window-outer {
 .CodeMirror .CodeMirror-gutters {
   background-color: #1d1f21 !important;
 }
+.navigator-tabbed-pane .tabbed-pane-header,
+#scripts-editor-container-tabbed-pane .tabbed-pane-header {
+  height: 28px !important;
+  padding-top: 5px !important;
+  background-image: none !important;
+}
+.navigator-tabbed-pane .tabbed-pane-content {
+  color: #ffffff !important;
+}
+.status-bar-item.scripts-navigator-show-hide-button,
+.status-bar-item.scripts-debugger-show-hide-button {
+  top: 2px !important;
+}
+.tabbed-pane-header-tab {
+  color: #b3b3b3 !important;
+  border-color: #444444 !important;
+  background-color: #292c2f !important;
+}
+.tabbed-pane-header-tab.selected {
+  color: #ffffff !important;
+  border-color: grey !important;
+  background-color: #35393c !important;
+}
+#scripts-sidebar-stack-pane,
+div.sidebar-pane-stack#scripts-debug-sidebar-contents {
+  background: #1d1f21 !important;
+}
+.sidebar-pane .body {
+  color: #ffffff !important;
+}
+.sidebar-pane-title {
+  color: #ffffff !important;
+  background: #292c2f !important;
+}
+.sidebar-pane-title:before {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
