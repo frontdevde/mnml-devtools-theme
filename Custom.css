@@ -656,6 +656,8 @@ body.compact .help-window-outer {
 .cm-js-comment {
   color: #7c7c7c !important;
 }
+.cm-css-qualifier,
+.cm-css-tag,
 .webkit-html-css-node {
   color: #bbde57 !important;
 }
@@ -664,6 +666,8 @@ body.compact .help-window-outer {
 .webkit-css-property {
   color: #eec574 !important;
 }
+.cm-css-variable-2,
+.cm-css-string,
 .cm-css-string-2,
 .cm-css-number,
 .cm-css-atom {
