@@ -124,18 +124,9 @@
   position: relative;
   background: none !important;
 }
-#-webkit-web-inspector .status-bar-select-container:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 7px;
-  right: 3px;
-  width: 0;
-  height: 0;
-  opacity: .75;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 8px solid #666666;
+#-webkit-web-inspector .status-bar-select-container .status-bar-select-arrow {
+  -webkit-filter: invert(0.75);
+  filter: invert(0.75);
 }
 #-webkit-web-inspector .timeline-records-counter {
   color: #666666 !important;

@@ -215,19 +215,23 @@
     .status-bar-select-container{
         position: relative;
         background: none !important;
-        &:after{
-            content: "";
-            display: block;
-            position: absolute;
-            top: 7px;
-            right: 3px;
-            width: 0;
-            height: 0;
-            opacity: .75;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
-            border-top: 8px solid @statusbar-text;
+        .status-bar-select-arrow{
+            -webkit-filter: invert(.75);
+            filter: invert(.75);
         }
+        // &:after{
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     top: 7px;
+        //     right: 3px;
+        //     width: 0;
+        //     height: 0;
+        //     opacity: .75;
+        //     border-left: 4px solid transparent;
+        //     border-right: 4px solid transparent;
+        //     border-top: 8px solid @statusbar-text;
+        // }
     }
 
     .timeline-records-counter{
