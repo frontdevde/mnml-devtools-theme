@@ -372,6 +372,14 @@
         .network-graph-label{
             color: @font !important;
             text-shadow: none !important;
+            &.before,
+            &.after{
+                &::before,
+                &::after{
+                    -webkit-filter: invert(1);
+                    filter: invert(1);
+                }
+            }
         }
         .timeline-column select{
             color: @font !important;

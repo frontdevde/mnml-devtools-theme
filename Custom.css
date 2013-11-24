@@ -242,6 +242,13 @@
   color: #ffffff !important;
   text-shadow: none !important;
 }
+#-webkit-web-inspector #network-container .network-graph-label.before::before,
+#-webkit-web-inspector #network-container .network-graph-label.after::before,
+#-webkit-web-inspector #network-container .network-graph-label.before::after,
+#-webkit-web-inspector #network-container .network-graph-label.after::after {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
 #-webkit-web-inspector #network-container .timeline-column select {
   color: #ffffff !important;
 }
