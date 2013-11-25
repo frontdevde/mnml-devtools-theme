@@ -252,6 +252,9 @@
 #-webkit-web-inspector #network-container .timeline-column select {
   color: #ffffff !important;
 }
+#-webkit-web-inspector .network-blue-divider {
+  background-color: rgba(50, 50, 220, 0.75) !important;
+}
 #-webkit-web-inspector .script-view,
 #-webkit-web-inspector .properties-tree,
 #-webkit-web-inspector .pane,
