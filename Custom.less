@@ -932,7 +932,7 @@ body.compact .help-window-outer{
     color: @css-attribute !important;
 }
 
-// Sources Tab
+// Sources tab
 
 .navigator-tabbed-pane,
 #scripts-editor-container-tabbed-pane{ 
@@ -985,6 +985,27 @@ div.sidebar-pane-stack#scripts-debug-sidebar-contents{
 }
 
 .navigator .icon{
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-filter: grayscale(.5);
+    filter: grayscale(.5);
 }
+
+// Resources tab
+
+.resources.panel{ 
+    .sidebar{
+        color: @font !important;
+        background: @background !important;
+        .icon{
+            -webkit-filter: grayscale(.5);
+            filter: grayscale(.5);
+        }
+    }
+    .base-storage-tree-element-subtitle{
+        color: @font !important;
+    }
+}
+
+
+
+
+

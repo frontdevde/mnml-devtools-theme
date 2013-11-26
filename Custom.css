@@ -713,6 +713,17 @@ div.sidebar-pane-stack#scripts-debug-sidebar-contents {
   filter: invert(1);
 }
 .navigator .icon {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+}
+.resources.panel .sidebar {
+  color: #ffffff !important;
+  background: #1d1f21 !important;
+}
+.resources.panel .sidebar .icon {
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+}
+.resources.panel .base-storage-tree-element-subtitle {
+  color: #ffffff !important;
 }
