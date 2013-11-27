@@ -653,6 +653,16 @@ body.compact .help-window-outer {
   padding: 3px;
   color: #1a1919 !important;
 }
+.help-close-button {
+  top: 10px !important;
+  right: 10px !important;
+  width: 14px !important;
+  height: 14px !important;
+  background-position: -174px -216px !important;
+}
+.help-close-button:hover {
+  background-position: -96px -216px !important;
+}
 .CodeMirror {
   color: #ffffff !important;
 }
