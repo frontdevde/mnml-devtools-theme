@@ -650,6 +650,7 @@ body.compact .help-window-outer {
   top: 75px !important;
 }
 .no-file-systems-message {
+  padding: 3px;
   color: #1a1919 !important;
 }
 .CodeMirror {
