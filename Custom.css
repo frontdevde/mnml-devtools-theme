@@ -642,6 +642,7 @@ body.compact .help-window-outer {
   color: #ffffff !important;
 }
 .settings-tab-container header {
+  margin-right: 20px;
   padding: 14px 0 18px !important;
   border-bottom: 1px dashed #444444 !important;
 }
