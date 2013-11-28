@@ -1,6 +1,5 @@
 # mnml Theme
 A not so minimal theme for the Chrome Developer Tools.  
-Modifies Elements and Console view, other views are on the way.
 
 Tested on Mac.
 
