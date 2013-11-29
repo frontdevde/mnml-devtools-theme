@@ -752,3 +752,7 @@ div.sidebar-pane-stack#scripts-debug-sidebar-contents {
 .resources.panel .base-storage-tree-element-subtitle {
   color: #ffffff !important;
 }
+.resources.panel .storage-view.visible,
+.resources.panel .split-view-vertical > .split-view-contents-second {
+  background: #1d1f21 !important;
+}
