@@ -255,6 +255,15 @@
 #-webkit-web-inspector .network-blue-divider {
   background-color: rgba(50, 50, 220, 0.75) !important;
 }
+#-webkit-web-inspector .resource-headers-view .outline-disclosure .header-name {
+  color: #999999 !important;
+}
+#-webkit-web-inspector .resource-headers-view .outline-disclosure .header-value {
+  color: #ffffff !important;
+}
+#-webkit-web-inspector .resource-timing-view {
+  color: #ffffff !important;
+}
 #-webkit-web-inspector .script-view,
 #-webkit-web-inspector .properties-tree,
 #-webkit-web-inspector .pane,
