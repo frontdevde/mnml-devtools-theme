@@ -734,6 +734,13 @@ body.compact .help-window-outer {
   border-color: grey !important;
   background-color: #35393c !important;
 }
+.tabbed-pane-content.has-no-tabs {
+  color: #ffffff !important;
+  background: #1d1f21 !important;
+}
+.tabbed-pane-content.has-no-tabs .tabbed-pane-placeholder {
+  text-shadow: none !important;
+}
 #scripts-sidebar-stack-pane,
 div.sidebar-pane-stack#scripts-debug-sidebar-contents {
   background: #1d1f21 !important;

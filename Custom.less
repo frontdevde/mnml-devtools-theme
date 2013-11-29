@@ -1013,6 +1013,16 @@ body.compact .help-window-outer{
 
 }
 
+.tabbed-pane-content{
+    &.has-no-tabs{
+        color: @font !important;
+        background: @background !important;
+        .tabbed-pane-placeholder{
+            text-shadow: none !important;
+        }
+    }
+}
+
 #scripts-sidebar-stack-pane,
 div.sidebar-pane-stack#scripts-debug-sidebar-contents{
     background: @background !important;
