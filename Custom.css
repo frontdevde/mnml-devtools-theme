@@ -701,8 +701,6 @@ body.compact .help-window-outer {
 }
 .navigator-tabbed-pane .tabbed-pane-header,
 #scripts-editor-container-tabbed-pane .tabbed-pane-header {
-  height: 28px !important;
-  padding-top: 5px !important;
   background-image: none !important;
 }
 .navigator-tabbed-pane .tabbed-pane-content {
@@ -711,6 +709,11 @@ body.compact .help-window-outer {
 .status-bar-item.scripts-navigator-show-hide-button,
 .status-bar-item.scripts-debugger-show-hide-button {
   top: 2px !important;
+}
+.tabbed-pane-header {
+  height: 28px !important;
+  padding-top: 5px !important;
+  background: #1d1f21 !important;
 }
 .tabbed-pane-header-tab {
   color: #b3b3b3 !important;
