@@ -1,5 +1,10 @@
+
+*NOTE: Development on and support for this theme has stopped. If you'd like to continue using/updating it feel free to fork the repository!*
+
 # mnml Theme
-A not so minimal theme for the Chrome Developer Tools.  
+A not so minimal theme for the Chrome Developer Tools.
+
+Caution: Frequent use of !important as it sadly is necessary to override the Dev Tools styles.
 
 Tested on Mac.
 
